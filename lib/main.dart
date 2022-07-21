@@ -3,7 +3,7 @@ import 'package:realm/realm.dart';
 
 import 'router_manager.dart';
 
-const String _appId = 'add your mongodb realm app id here';
+const String _appId = 'add your mongodb realm app id here ';
 final AppConfiguration _appConfig = AppConfiguration(_appId);
 final App app = App(_appConfig);
 

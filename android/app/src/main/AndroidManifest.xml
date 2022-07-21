@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_realm_auth">
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
    <application
         android:label="flutter_realm_auth"
         android:name="${applicationName}"
