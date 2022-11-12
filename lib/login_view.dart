@@ -59,14 +59,14 @@ class LoginViewState extends State<LoginView> with RestorationMixin {
       var emailCred = Credentials.emailPassword(email, password);
       try {
         await app.logIn(emailCred);
-      } on RealmException catch (error) {
-        print(error.message);
+      } on Exception catch (error) {
+        print(error.toString());
         return;
       }
       if (!mounted) {
         return;
       }
-      Navigator.pushNamed(context, 'login');
+      Navigator.pushNamed(context, '/');
     }
   }
 
